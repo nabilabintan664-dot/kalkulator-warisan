@@ -103,7 +103,7 @@ st.markdown("""
 col_title, col_logo = st.columns([4, 1])
 with col_title:
     st.markdown("# ⚖️ Kalkulator Waris Islam")
-    st.markdown("### 📜 FARAIDH")
+    st.markdown("### FARAIDH")
     st.markdown("Berdasarkan Al-Qur'an Surah An-Nisa ayat 11-12")
 
 st.markdown("---")
@@ -130,23 +130,23 @@ with st.sidebar:
 col1, col2 = st.columns(2)
 
 with col1:
-    st.markdown("### 💰 Harta Warisan")
+    st.markdown("### Harta Warisan")
     total_harta = st.number_input("Total Harta (Rp)", min_value=0, value=100000000, step=10000000)
     
-    st.markdown("### 👨‍👩‍👧‍👦 Ahli Waris")
+    st.markdown("### Ahli Waris")
     ada_suami = st.checkbox("Suami", value=True)
     ada_istri = st.checkbox("Istri", value=False)
     ada_ayah = st.checkbox("Ayah", value=False)
     ada_ibu = st.checkbox("Ibu", value=True)
 
 with col2:
-    st.markdown("### 👶 Keturunan")
+    st.markdown("### Keturunan")
     anak_l = st.number_input("Anak Laki-laki", min_value=0, value=2, step=1)
     anak_p = st.number_input("Anak Perempuan", min_value=0, value=1, step=1)
 
 # Tombol
 st.markdown("---")
-hitung = st.button("🔢 HITUNG PEMBAGIAN WARIS", use_container_width=True)
+hitung = st.button("HITUNG PEMBAGIAN WARIS", use_container_width=True)
 
 # Fungsi hitung
 def hitung_waris(total, suami, istri, ayah, ibu, anak_l, anak_p):
@@ -203,7 +203,7 @@ if hitung:
         bagian = hitung_waris(total_harta, ada_suami, ada_istri, ada_ayah, ada_ibu, anak_l, anak_p)
         
         st.markdown("---")
-        st.markdown("## 📋 HASIL PEMBAGIAN WARIS")
+        st.markdown("## HASIL PEMBAGIAN WARIS")
         st.markdown(f"**Total Harta: Rp {total_harta:,.0f}**")
         
         total_terbagi = 0
@@ -227,7 +227,7 @@ if hitung:
             persen = (nilai / total_harta) * 100
             st.markdown(f"""
             <div class="result-item">
-                <span style="font-weight:bold;">👦 Anak Laki-laki ({anak_l} orang)</span>
+                <span style="font-weight:bold;">Anak Laki-laki ({anak_l} orang)</span>
                 <span>Rp {nilai:,.0f} <span style="color:#e67e22;">({persen:.2f}%)</span></span>
             </div>
             """, unsafe_allow_html=True)
@@ -240,7 +240,7 @@ if hitung:
             persen = (nilai / total_harta) * 100
             st.markdown(f"""
             <div class="result-item">
-                <span style="font-weight:bold;">👧 Anak Perempuan ({anak_p} orang)</span>
+                <span style="font-weight:bold;">Anak Perempuan ({anak_p} orang)</span>
                 <span>Rp {nilai:,.0f} <span style="color:#e67e22;">({persen:.2f}%)</span></span>
             </div>
             """, unsafe_allow_html=True)
