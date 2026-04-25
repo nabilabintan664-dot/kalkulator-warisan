@@ -18,7 +18,8 @@ Kalkulator pembagian waris berdasarkan syariat Islam, sesuai Al-Qur'an Surah An-
 - Ilmu Faraidh
 
 ## Screenshot
-<img width="1365" height="683" alt="image" src="https://github.com/user-attachments/assets/24a6142d-b2c2-4d27-b7cb-0817b9a4ce50" />
+<img width="1365" height="724" alt="image" src="https://github.com/user-attachments/assets/248afe85-5cfd-41b9-a6de-dc18bf43face" />
+
 
 ## Cara Menjalankan di Lokal
 
